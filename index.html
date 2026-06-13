@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&family=PT+Serif:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Clínica Zoe Vet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar-contenedor">
+            <div class="navbar-interior">
+                <ul id="lista-nav">
+                    <div class="indicador-movil"></div>
+                    <li><a class="links-nav active" href="#inicio">Inicio</a></li>
+                    <li><a class="links-nav" href="#servicios">Servicios</a></li>
+                    <li><a class="links-nav" href="#reseñas">Reseñas</a></li>
+                    <li><a class="links-nav" href="#nosotros">Nosotros</a></li>
+                </ul>
+                <a class="btn-nav-reserva" href="#reserva">Reserva</a>
+            </div>
+        </nav>
+        <div class="hero" id="inicio">
+            <div class="hero-texto">
+                <h1>Clínica Veterinaria en Arequipa</h1>
+                <h2>ZoeVet</h2>
+                <p class="hero-subtitle">
+                    Cuidamos de tu compañero de cuatro patas con tecnología de vanguardia y un equipo 
+                    médico altamente calificado disponible las 24 horas del día.
+                </p>
+                <a href="#">Reserva tu cita</a>
+            </div>
+            <img id="foto-hero" src="/imagenes/fotoveterinario.jpg" alt="Foto Veterinaria">
+        </div>
+    </header>
+    <main>
+        <section id="servicios">
+            <h2>Nuestros Servicios Especializados</h2>
+            <div class="servicios-contenedor">
+                <div class="tarjeta-servicio color-azul">
+                    <div class="tarjeta-contenido-principal">
+                        <h3>Spa & Estética Premium</h3>
+                        <p class="descripcion">
+                        Mucho más que un simple baño. Ofrecemos una experiencia de relajación total.
+                        </p>
+                        <ul>
+                            <li>Baños de Belleza y Medicados</li>
+                            <li>Peluquería Profesional y Cortes de Mantenimiento</li>
+                            <li>Baños en Seco y Dermocosmética</li>
+                            <li>Accesorios y Promociones Anti-pulgas</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="imagenes/servicio1.png" alt="Spa canino" class="imagen-principal">
+                    </div>
+                </div>
+                <div class="tarjeta-servicio color-verde">        
+                    <div class="tarjeta-contenido-principal">
+                        <h3>Exámenes & Análisis Clínicos</h3>
+                        <p class="descripcion">
+                            Diagnósticos precisos al instante. Contamos con laboratorio propio de última generación 
+                            diferentes tipos de exámenes.
+                        </p>
+                        <ul>
+                            <li>Análisis de Laboratorio Clínico (Hematología Completa)</li>
+                            <li>Ecografía Especializada y Rayos X</li>
+                            <li>Raspados Cutáneos y Citologías</li>
+                            <li>Pruebas Rápidas de Descarte</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="imagenes/servicio2.png" alt="Laboratorio veterinario" class="imagen-principal">
+                    </div>
+                </div>
+                <div class="tarjeta-servicio color-azul">  
+                    <div class="tarjeta-contenido-principal">
+                        <h3>Prevención Integral</h3>
+                        <p class="descripcion">
+                            Protegemos a tu mascota contra las amenazas del entorno en cada etapa de su vida.
+                        </p>
+                        <ul>
+                            <li>Plan de Vacunación Completa (Canina y Felina)</li>
+                            <li>Desparasitaciones Internas y Externas Rigurosas</li>
+                            <li>Consultas Clínicas y Chequeos de Rutina Semestrales</li>
+                            <li>Inseminación Artificial Asistida</li>
+                            <li>Campañas de Esterilización Segura y Profilaxis Dental</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="imagenes/servicio3.png" alt="Prevención" class="imagen-principal">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reseñas">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="reseñas-contenedor">
+                <div class="tarjeta-reseña">
+                    <div class="reseña-cabecera">
+                        <div class="reseña-avatar">HB</div>
+                        <div class="reseña-usuario-info">
+                            <h4>Harieth Bernedo</h4>
+                            <span class="reseña-rol">Local Guide</span>
+                        </div>
+                        <div class="reseña-estrellas">★★★★★</div>
+                    </div>
+                        <p class="reseña-texto">Excelente atención del Dr. Larry, súper profesional y cariñoso con mi Schnauzer, veterinaria totalmente recomendada.</p>
+                    </div>
+                <div class="tarjeta-reseña">
+                    <div class="reseña-cabecera">
+                        <div class="reseña-avatar">CP</div>
+                        <div class="reseña-usuario-info">
+                            <h4>Claudia Ponce</h4>
+                            <span class="reseña-rol">Cliente Satisfecho</span>
+                        </div>
+                        <div class="reseña-estrellas">★★★★★</div>
+                    </div>
+                        <p class="reseña-texto">Los doctores son muy amables y cuentan con todos los equipos necesarios para la evaluación, a mi gatita le hicieron sus ecografías súper rápido ✨✨</p>
+                </div>
+                <div class="tarjeta-reseña">
+                    <div class="reseña-cabecera">
+                        <div class="reseña-avatar">LV</div>
+                        <div class="reseña-usuario-info">
+                            <h4>Larry Valles</h4>
+                            <span class="reseña-rol">Local Guide</span>
+                        </div>
+                        <div class="reseña-estrellas">★★★★★</div>
+                    </div>
+                    <p class="reseña-texto">Excelente calidad de atención y servicios en cada consulta médica.</p>
+                </div>
+            </div>
+            <div class="carrusel-js" id="carrusel">
+                <div class="cinta-js" id="cinta">
+                    <img src="imagenes/galeria1.jpg" alt="Foto 1">
+                    <img src="imagenes/galeria2.jpg" alt="Foto 2">
+                    <img src="imagenes/galeria4.jpg" alt="Foto 4">
+                    <img src="imagenes/galeria5.jpg" alt="Foto 5">
+                    <img src="imagenes/galeria6.jpg" alt="Foto 6">
+                    <img src="imagenes/galeria7.jpg" alt="Foto 7">
+                    <img src="imagenes/galeria9.jpg" alt="Foto 9">
+                </div>
+            </div>
+        </section>
+        <section id="nosotros">
+            <div class="nosotros-contenedor"> 
+                <div class="nosotros-contenido animacion-izquierda seccion-oculta">
+                    <h2>Pasión por la salud y el bienestar de tu mascota</h2>
+                    <p class="nosotros-descripcion">
+                        Somos una clínica veterinaria comprometida con brindar atención médica de la más alta calidad en la ciudad de Arequipa. Nos 
+                        dedicamos a proteger y recuperar la salud de tus fieles compañeros a través de un enfoque integral que combina profesionalismo, 
+                        tecnología diagnóstica avanzada y, sobre todo, un profundo amor por los animales.
+                    </p>
+                    <div class="nosotros-pilares">
+                        <div class="pilar-item">
+                            <div class="pilar-texto">
+                                <h4>Atención Especializada</h4>
+                                <p>Médicos veterinarios calificados listos para atender consultas, cirugías y emergencias.</p>
+                            </div>
+                        </div>
+                        <div class="pilar-item">
+                            <div class="pilar-texto">
+                                <h4>Tecnología Propia</h4>
+                                <p>Contamos con laboratorio clínico y equipos de ecografía para diagnósticos rápidos y precisos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nosotros-imagen-bloque animacion-derecha seccion-oculta">
+                    <img src="imagenes/fotonosotros.png" alt="Equipo Médico Zoe Vet" class="foto-nosotros">
+                    <div class="decoracion-borde"></div>
+                </div>
+                <div class="nosotros-ubicacion-bloque">
+                    <div class="ubicacion-datos">
+                        <h3>Visítanos en Sede</h3> 
+                        <div class="dato-linea">
+                            <p>Dirección: Urbanización Monterrico, Corazón de María II, Arequipa 04002</p>
+                        </div>
+                        <div class="dato-linea">
+                            <p>Horario: Lunes a Sábado: 9:00 a.m. – 7:00 p.m. <span class="nota-domingo">(Domingos: Cerrado)</span></p>
+                        </div>
+                    </div>
+                    <div class="ubicacion-mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.570111165217!2d-71.51832818924187!3d-16.417703368252443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b87cfa34e8d%3A0xe1d2c8d702e5f82!2sVeterinaria%20ZoeVet%20Arequipa!5e0!3m2!1ses!2spe!4v1781317145645!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+    </section>
+        <section id="reserva">
+            <div class="reserva-bloque-horizontal">
+                <h2>Agende su cita</h2>
+                <form class="formulario-horizontal">
+                    <div class="campo-horizontal">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre completo" required>
+                    </div>
+                    <div class="campo-horizontal">
+                        <label for="tipo-mascota">Tipo de mascota</label>
+                        <select id="tipo-mascota" name="tipo_mascota" required>
+                            <option value="" disabled selected>Seleccione su tipo de mascota</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otros">Otros pequeños animales</option>
+                        </select>
+                    </div>
+                    <div class="campo-horizontal">
+                        <label for="servicio-interes">Servicio interesado</label>
+                        <select id="servicio-interes" name="servicio_interes" required>
+                            <option value="" disabled selected>Seleccione que servicio desea</option>
+                            <option value="spa">Spa & Estética Premium</option>
+                            <option value="examenes">Exámenes & Análisis Clínicos</option>
+                            <option value="prevencion">Prevención Integral / Consulta</option>
+                        </select>
+                    </div>
+                    <div class="campo-horizontal">
+                        <label for="fecha-cita">Fecha</label>
+                        <input type="date" id="fecha-cita" name="fecha_exacta" required>
+                    </div>
+                    <div class="campo-horizontal">
+                        <label for="hora-cita">Hora</label>
+                        <input type="time" id="hora-cita" name="hora_exacta" min="09:00" max="19:00" required>
+                    </div>
+                    <div class="campo-horizontal">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="999 999 999" maxlength="9" required>
+                    </div>
+                    <div class="botones-reserva-horizontal">
+                        <button type="submit" class="btn-enviar-rect">Reserve su cita por Email</button>
+                        <a href="#" id="btn-whatsapp-dinamico" class="btn-whatsapp-rect" target="_blank">
+                        Reserve su cita por Whatsapp</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
