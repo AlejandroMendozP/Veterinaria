@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    // ==========================================
-    // 1. INDICADOR MÓVIL DEL MENÚ DE NAVEGACIÓN
-    // ==========================================
     const listaNav = document.getElementById('lista-nav');
     const links = document.querySelectorAll('.links-nav');
     const indicador = document.querySelector('.indicador-movil');
@@ -42,10 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentActive) moverIndicador(currentActive);
         });
     }
-
-    // ==========================================
-    // 2. CONFIGURACIÓN DE INPUTS (FECHA Y TLF)
-    // ==========================================
     const inputFecha = document.getElementById('fecha-cita');
     const inputTelefono = document.getElementById('telefono');
 
@@ -63,9 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ==========================================
-    // 3. VALIDACIÓN DE FORMULARIO DE RESERVA
-    // ==========================================
     function validarYObtenerDatos() {
         const nombreInput = document.getElementById('nombre');
         const tipoMascotaSelect = document.getElementById('tipo-mascota');
@@ -132,9 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return { nombre, tipoMascota: tipoMascotaText, servicio: servicioText, fecha, hora, telefono };
     }
 
-    // ==========================================
-    // 4. ENVÍO DE RESERVAS (WHATSAPP / GMAIL)
-    // ==========================================
     const formulario = document.querySelector('.formulario-horizontal');
     const btnWhatsapp = document.getElementById('btn-whatsapp-dinamico');
 
@@ -184,9 +170,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
-    // ==========================================
-    // 5. CARRUSEL INFINITO DE IMÁGENES
-    // ==========================================
     const cinta = document.getElementById("cinta");
     const carrusel = document.getElementById("carrusel");
 
@@ -218,9 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
         moverCarrusel();
     }
 
-    // ==========================================
-    // 6. INTERSECTION OBSERVER (ANIMACIONES)
-    // ==========================================
     const opcionesObserver = {
         root: null, 
         threshold: 0.15
@@ -232,29 +212,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 entry.target.classList.add('seccion-visible');
                 entry.target.classList.remove('seccion-oculta');
                 
-                // Deja de observar una vez ejecutado para evitar rebotes
                 animarSecciones.unobserve(entry.target); 
             }
         });
     }, opcionesObserver);
 
-    // Secciones con animación general hacia arriba (Excluye #nosotros y #reseñas)
     const componentesGenerales = document.querySelectorAll('.hero, section:not(#reseñas):not(#nosotros)');
     componentesGenerales.forEach(comp => {
         comp.classList.add('seccion-animada', 'seccion-oculta');
         animarSecciones.observe(comp);
     });
 
-    // Implementación Lateral Independiente para la Sección "Nosotros"
     const textoNosotros = document.querySelector('.nosotros-contenido');
     const imagenNosotros = document.querySelector('.nosotros-imagen-bloque');
 
     if (textoNosotros && imagenNosotros) {
-        // Inicializamos las clases de movimiento horizontal
         textoNosotros.classList.add('animacion-izquierda', 'seccion-oculta');
         imagenNosotros.classList.add('animacion-derecha', 'seccion-oculta');
-
-        // Ponemos a observar ambos elementos por separado
         animarSecciones.observe(textoNosotros);
         animarSecciones.observe(imagenNosotros);
     }

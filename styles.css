@@ -18,10 +18,10 @@ header {
     background-color: white;
     width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
-    z-index: 100; /* Incrementado para asegurar que flote por encima de cualquier otra sección o mapa */
-    position: fixed; /* O también puedes usar 'sticky' */
+    z-index: 5;
+    position: fixed;
     top: 0;
-    left: 0; /* Asegura que se alinee perfectamente desde el borde izquierdo */
+    left: 0;
 }
 
 .navbar-interior {
@@ -98,7 +98,8 @@ header {
     gap: 2rem;
     box-sizing: border-box;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
+    align-items: flex-end; 
 }
 
 .hero-texto {
@@ -107,7 +108,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-self: center;
+    margin-bottom: auto;
+    margin-top: auto;
     padding-bottom: 2rem; 
 }
 
@@ -161,17 +163,40 @@ header {
 }
 
 #foto-hero {
-    flex-basis: 50%;    
-    flex-grow: 1;       
-    flex-shrink: 0;
-    
+    flex: 1 1 50%; 
+    width: 100%;
+    max-width: 50%;
+    height: auto; 
     max-height: calc(100vh - 120px); 
-    width: 50%;         
-    display: block;     
-    object-fit: cover;  
-    object-position: center bottom; 
+    display: block; 
+    object-fit: contain;  
+    object-position: right bottom; 
+    margin-bottom: 0;
+    padding-bottom: 0;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+        padding: 2rem 5% 0 5%;
+    }
+
+    .hero-texto {
+        flex-basis: 100%;
+        margin-bottom: 0;
+    }
+
+    #foto-hero {
+        flex-basis: 100%;
+        max-width: 100%;
+        max-height: 350px; 
+        margin-top: 20px;
+        object-position: center bottom;
+    }
 }
 
 #servicios {
